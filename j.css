@@ -1,0 +1,63 @@
+.title {
+    position: relative;
+    color: #262626;
+    padding: 20px 50px;
+    animation: color 5s linear infinite;
+  }
+   
+  .title:before {
+    background: #090202;
+    color: rgb(255, 255, 255);
+    content: 'Dino World';
+    overflow: hidden;
+    position: absolute;  
+    top: 0;  
+    left: 0;
+    padding: 20px 140px;
+      -webkit-clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);  
+    clip-path: polygon(0% 0% , 30% 0%, 30% 100%, 0% 100%);
+    animation: slide 4s 1s linear infinite; 
+  } 
+             
+  @keyframes slide {      
+    40% {     
+      -webkit-clip-path: polygon(70% 0%, 100% 0%, 100% 100%, 70% 100%); 
+    } 
+  }  
+  
+  body {
+    font-family: sans-serif;
+    font-weight: 700;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 50px; 
+    background-color: black;
+  }
+
+  img{
+    height: 200px;
+    width: 700px;
+    margin-top: 100px;
+}
+  a{
+    color: rgb(0, 255, 47);
+    font-size: 24px;
+    text-decoration:none;
+  }
+
+  a:hover{
+    color: rgb(7, 224, 244);
+  }
+
+h5{
+    color: rgb(233, 65, 3);
+}
+
+section{
+    background-color: rgb(5, 5, 60);
+}
+p{
+    color: aliceblue;
+     font-size: 40px;
+}
